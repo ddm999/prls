@@ -6,7 +6,7 @@ const VideoDetails = ({ viewers }) => {
   return (
     <VideoDetailsContainer>
       <p>{viewers} watching</p>
-      <span id="smalltext"><p>ddm's Lightspeed stream</p></span>
+      <span id="smalltext"><p>ddm&apos;s Lightspeed stream</p></span>
     </VideoDetailsContainer>
   );
 };
