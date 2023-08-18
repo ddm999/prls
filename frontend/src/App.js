@@ -4,8 +4,6 @@ import { useSocket } from "./context/SocketContext";
 import { useRTC } from "./context/RTCPeerContext";
 import VideoPlayer from "./components/VideoPlayer";
 import VideoDetails from "./components/VideoDetails";
-import Header from "./components/Header";
-import { VideoContainer, MainContainer } from "./styles/appStyles";
 
 const appReducer = (state, action) => {
   switch (action.type) {
@@ -101,13 +99,8 @@ const App = () => {
 
   return (
     <>
-      <Header></Header>
-      <MainContainer>
-        <VideoContainer>
-          <VideoPlayer src={state.stream} />
-          <VideoDetails viewers={state.viewers} />
-        </VideoContainer>
-      </MainContainer>
+      <VideoPlayer src={state.stream} />
+      <VideoDetails viewers={state.viewers} />
     </>
   );
 };

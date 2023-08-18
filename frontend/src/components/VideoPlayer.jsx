@@ -18,7 +18,6 @@ const VideoPlayer = ({ src }) => {
       playsInline
       autoPlay
       controls
-      muted
     ></Video>
   );
 };

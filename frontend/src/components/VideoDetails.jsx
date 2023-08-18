@@ -1,19 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  VideoDetailsContainer,
-  DetailsTop,
-  ViewerTag,
-} from "../styles/videoDetailsStyles";
+import { VideoDetailsContainer } from "../styles/videoDetailsStyles";
 
 const VideoDetails = ({ viewers }) => {
   return (
     <VideoDetailsContainer>
-      <DetailsTop>
-        <ViewerTag>
-          <span>{viewers} watching</span>
-        </ViewerTag>
-      </DetailsTop>
+      <p>{viewers} watching</p>
+      <span id="smalltext"><p>ddm's Lightspeed stream</p></span>
     </VideoDetailsContainer>
   );
 };
