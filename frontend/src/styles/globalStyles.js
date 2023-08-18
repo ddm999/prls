@@ -7,7 +7,6 @@ const GlobalStyle = createGlobalStyle`
         border: 0;
         font-family: 'Roboto', sans-serif;
         color: #ffffff;
-        background-color: #202124;
         font-size: 28px;
         font-style: normal;
         text-align: center;
